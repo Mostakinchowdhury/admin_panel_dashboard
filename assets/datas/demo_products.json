@@ -1,0 +1,5255 @@
+[
+  {
+    "id": 1,
+    "category": "Soup",
+    "name": "Soup 1",
+    "description": "Delicious soup item number 1, made with fresh ingredients.",
+    "price": "209.48",
+    "max_price": "232.59",
+    "stock": 56,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795776",
+    "update_at": "2025-11-04T05:14:05.795792",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 12,
+    "added_to_cart_count": 12,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup1_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup1_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Soup",
+    "name": "Soup 2",
+    "description": "Delicious soup item number 2, made with fresh ingredients.",
+    "price": "164.18",
+    "max_price": "175.93",
+    "stock": 50,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      },
+      {
+        "id": 3,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795830",
+    "update_at": "2025-11-04T05:14:05.795837",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.67,
+    "review_count": 3,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup2_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Drinks",
+    "name": "Drinks 3",
+    "description": "Delicious drinks item number 3, made with fresh ingredients.",
+    "price": "323.21",
+    "max_price": "368.30",
+    "stock": 76,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795862",
+    "update_at": "2025-11-04T05:14:05.795863",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 4,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks3_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks3_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks3_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Pizza",
+    "name": "Pizza 4",
+    "description": "Delicious pizza item number 4, made with fresh ingredients.",
+    "price": "512.41",
+    "max_price": "551.89",
+    "stock": 51,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795888",
+    "update_at": "2025-11-04T05:14:05.795889",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza4_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza4_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Dessert",
+    "name": "Dessert 5",
+    "description": "Delicious dessert item number 5, made with fresh ingredients.",
+    "price": "348.91",
+    "max_price": "359.55",
+    "stock": 64,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795906",
+    "update_at": "2025-11-04T05:14:05.795909",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 10,
+    "added_to_cart_count": 10,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert5_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Pizza",
+    "name": "Pizza 6",
+    "description": "Delicious pizza item number 6, made with fresh ingredients.",
+    "price": "378.77",
+    "max_price": "392.47",
+    "stock": 30,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.795928",
+    "update_at": "2025-11-04T05:14:05.795929",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.67,
+    "review_count": 3,
+    "addedtocard": 7,
+    "added_to_cart_count": 7,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza6_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Pizza",
+    "name": "Pizza 7",
+    "description": "Delicious pizza item number 7, made with fresh ingredients.",
+    "price": "121.41",
+    "max_price": "159.61",
+    "stock": 71,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796089",
+    "update_at": "2025-11-04T05:14:05.796092",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 11,
+    "added_to_cart_count": 11,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza7_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza7_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza7_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Soup",
+    "name": "Soup 8",
+    "description": "Delicious soup item number 8, made with fresh ingredients.",
+    "price": "309.32",
+    "max_price": "353.16",
+    "stock": 10,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796122",
+    "update_at": "2025-11-04T05:14:05.796124",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup8_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup8_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup8_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Salad",
+    "name": "Salad 9",
+    "description": "Delicious salad item number 9, made with fresh ingredients.",
+    "price": "353.21",
+    "max_price": "372.96",
+    "stock": 75,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796141",
+    "update_at": "2025-11-04T05:14:05.796143",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 6,
+    "added_to_cart_count": 6,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad9_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Pasta",
+    "name": "Pasta 10",
+    "description": "Delicious pasta item number 10, made with fresh ingredients.",
+    "price": "530.65",
+    "max_price": "551.03",
+    "stock": 21,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      },
+      {
+        "id": 3,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796159",
+    "update_at": "2025-11-04T05:14:05.796161",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 6,
+    "added_to_cart_count": 6,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta10_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta10_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta10_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Drinks",
+    "name": "Drinks 11",
+    "description": "Delicious drinks item number 11, made with fresh ingredients.",
+    "price": "517.47",
+    "max_price": "528.76",
+    "stock": 66,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796242",
+    "update_at": "2025-11-04T05:14:05.796244",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.5,
+    "review_count": 2,
+    "addedtocard": 5,
+    "added_to_cart_count": 5,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks11_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Pasta",
+    "name": "Pasta 12",
+    "description": "Delicious pasta item number 12, made with fresh ingredients.",
+    "price": "203.07",
+    "max_price": "223.14",
+    "stock": 11,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796270",
+    "update_at": "2025-11-04T05:14:05.796274",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 1,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta12_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta12_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta12_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Drinks",
+    "name": "Drinks 13",
+    "description": "Delicious drinks item number 13, made with fresh ingredients.",
+    "price": "509.13",
+    "max_price": "548.13",
+    "stock": 85,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796305",
+    "update_at": "2025-11-04T05:14:05.796306",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks13_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks13_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Salad",
+    "name": "Salad 14",
+    "description": "Delicious salad item number 14, made with fresh ingredients.",
+    "price": "562.26",
+    "max_price": "588.81",
+    "stock": 12,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796321",
+    "update_at": "2025-11-04T05:14:05.796333",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 1,
+    "addedtocard": 6,
+    "added_to_cart_count": 6,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad14_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Dessert",
+    "name": "Dessert 15",
+    "description": "Delicious dessert item number 15, made with fresh ingredients.",
+    "price": "403.21",
+    "max_price": "416.46",
+    "stock": 88,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796349",
+    "update_at": "2025-11-04T05:14:05.796350",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 2,
+    "addedtocard": 1,
+    "added_to_cart_count": 1,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert15_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Drinks",
+    "name": "Drinks 16",
+    "description": "Delicious drinks item number 16, made with fresh ingredients.",
+    "price": "517.04",
+    "max_price": "536.98",
+    "stock": 64,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796366",
+    "update_at": "2025-11-04T05:14:05.796368",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 17,
+    "added_to_cart_count": 17,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks16_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Dessert",
+    "name": "Dessert 17",
+    "description": "Delicious dessert item number 17, made with fresh ingredients.",
+    "price": "251.62",
+    "max_price": "293.76",
+    "stock": 98,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      },
+      {
+        "id": 2,
+        "name": "Italian"
+      },
+      {
+        "id": 3,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796385",
+    "update_at": "2025-11-04T05:14:05.796386",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert17_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert17_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert17_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Fries",
+    "name": "Fries 18",
+    "description": "Delicious fries item number 18, made with fresh ingredients.",
+    "price": "596.34",
+    "max_price": "613.26",
+    "stock": 82,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796404",
+    "update_at": "2025-11-04T05:14:05.796406",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries18_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries18_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries18_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Fries",
+    "name": "Fries 19",
+    "description": "Delicious fries item number 19, made with fresh ingredients.",
+    "price": "362.56",
+    "max_price": "411.39",
+    "stock": 42,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796422",
+    "update_at": "2025-11-04T05:14:05.796423",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.25,
+    "review_count": 4,
+    "addedtocard": 6,
+    "added_to_cart_count": 6,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries19_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Fries",
+    "name": "Fries 20",
+    "description": "Delicious fries item number 20, made with fresh ingredients.",
+    "price": "200.26",
+    "max_price": "213.79",
+    "stock": 44,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796452",
+    "update_at": "2025-11-04T05:14:05.796454",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 4,
+    "addedtocard": 15,
+    "added_to_cart_count": 15,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries20_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Sandwich",
+    "name": "Sandwich 21",
+    "description": "Delicious sandwich item number 21, made with fresh ingredients.",
+    "price": "332.29",
+    "max_price": "378.79",
+    "stock": 18,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796466",
+    "update_at": "2025-11-04T05:14:05.796468",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 1,
+    "added_to_cart_count": 1,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich21_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich21_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Fries",
+    "name": "Fries 22",
+    "description": "Delicious fries item number 22, made with fresh ingredients.",
+    "price": "399.27",
+    "max_price": "429.01",
+    "stock": 19,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796484",
+    "update_at": "2025-11-04T05:14:05.796485",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.67,
+    "review_count": 3,
+    "addedtocard": 19,
+    "added_to_cart_count": 19,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries22_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Salad",
+    "name": "Salad 23",
+    "description": "Delicious salad item number 23, made with fresh ingredients.",
+    "price": "455.83",
+    "max_price": "500.75",
+    "stock": 96,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796503",
+    "update_at": "2025-11-04T05:14:05.796505",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.4,
+    "review_count": 5,
+    "addedtocard": 19,
+    "added_to_cart_count": 19,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad23_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad23_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Pasta",
+    "name": "Pasta 24",
+    "description": "Delicious pasta item number 24, made with fresh ingredients.",
+    "price": "183.59",
+    "max_price": "221.64",
+    "stock": 100,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796523",
+    "update_at": "2025-11-04T05:14:05.796524",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 2,
+    "addedtocard": 8,
+    "added_to_cart_count": 8,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta24_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Soup",
+    "name": "Soup 25",
+    "description": "Delicious soup item number 25, made with fresh ingredients.",
+    "price": "290.36",
+    "max_price": "338.38",
+    "stock": 77,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796544",
+    "update_at": "2025-11-04T05:14:05.796546",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.6,
+    "review_count": 5,
+    "addedtocard": 18,
+    "added_to_cart_count": 18,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup25_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup25_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup25_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Pizza",
+    "name": "Pizza 26",
+    "description": "Delicious pizza item number 26, made with fresh ingredients.",
+    "price": "242.59",
+    "max_price": "264.15",
+    "stock": 56,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796563",
+    "update_at": "2025-11-04T05:14:05.796565",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.25,
+    "review_count": 4,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza26_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza26_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza26_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Burger",
+    "name": "Burger 27",
+    "description": "Delicious burger item number 27, made with fresh ingredients.",
+    "price": "531.43",
+    "max_price": "556.86",
+    "stock": 75,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796582",
+    "update_at": "2025-11-04T05:14:05.796584",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger27_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger27_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger27_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Fries",
+    "name": "Fries 28",
+    "description": "Delicious fries item number 28, made with fresh ingredients.",
+    "price": "301.42",
+    "max_price": "325.21",
+    "stock": 43,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796600",
+    "update_at": "2025-11-04T05:14:05.796602",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 3,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries28_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Fries",
+    "name": "Fries 29",
+    "description": "Delicious fries item number 29, made with fresh ingredients.",
+    "price": "401.94",
+    "max_price": "412.41",
+    "stock": 18,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796619",
+    "update_at": "2025-11-04T05:14:05.796620",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.2,
+    "review_count": 5,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries29_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries29_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Pizza",
+    "name": "Pizza 30",
+    "description": "Delicious pizza item number 30, made with fresh ingredients.",
+    "price": "252.47",
+    "max_price": "295.96",
+    "stock": 73,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796639",
+    "update_at": "2025-11-04T05:14:05.796641",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza30_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "Fries",
+    "name": "Fries 31",
+    "description": "Delicious fries item number 31, made with fresh ingredients.",
+    "price": "335.44",
+    "max_price": "375.46",
+    "stock": 12,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796652",
+    "update_at": "2025-11-04T05:14:05.796654",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries31_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries31_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries31_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Drinks",
+    "name": "Drinks 32",
+    "description": "Delicious drinks item number 32, made with fresh ingredients.",
+    "price": "279.77",
+    "max_price": "303.36",
+    "stock": 86,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      },
+      {
+        "id": 3,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796667",
+    "update_at": "2025-11-04T05:14:05.796669",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 1,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks32_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "category": "Pasta",
+    "name": "Pasta 33",
+    "description": "Delicious pasta item number 33, made with fresh ingredients.",
+    "price": "538.82",
+    "max_price": "565.82",
+    "stock": 18,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796689",
+    "update_at": "2025-11-04T05:14:05.796691",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.8,
+    "review_count": 5,
+    "addedtocard": 17,
+    "added_to_cart_count": 17,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta33_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta33_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta33_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Sandwich",
+    "name": "Sandwich 34",
+    "description": "Delicious sandwich item number 34, made with fresh ingredients.",
+    "price": "251.58",
+    "max_price": "264.06",
+    "stock": 18,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      },
+      {
+        "id": 3,
+        "name": "Vegetarian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796708",
+    "update_at": "2025-11-04T05:14:05.796710",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 3,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich34_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich34_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich34_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "Sushi",
+    "name": "Sushi 35",
+    "description": "Delicious sushi item number 35, made with fresh ingredients.",
+    "price": "418.24",
+    "max_price": "432.45",
+    "stock": 67,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796723",
+    "update_at": "2025-11-04T05:14:05.796725",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 1,
+    "addedtocard": 8,
+    "added_to_cart_count": 8,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi35_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi35_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi35_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "Pizza",
+    "name": "Pizza 36",
+    "description": "Delicious pizza item number 36, made with fresh ingredients.",
+    "price": "316.72",
+    "max_price": "355.43",
+    "stock": 39,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796743",
+    "update_at": "2025-11-04T05:14:05.796745",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 12,
+    "added_to_cart_count": 12,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza36_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "Sushi",
+    "name": "Sushi 37",
+    "description": "Delicious sushi item number 37, made with fresh ingredients.",
+    "price": "253.00",
+    "max_price": "298.81",
+    "stock": 66,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796761",
+    "update_at": "2025-11-04T05:14:05.796762",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 15,
+    "added_to_cart_count": 15,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi37_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "category": "Sushi",
+    "name": "Sushi 38",
+    "description": "Delicious sushi item number 38, made with fresh ingredients.",
+    "price": "481.53",
+    "max_price": "512.90",
+    "stock": 72,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796776",
+    "update_at": "2025-11-04T05:14:05.796778",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 1,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi38_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "category": "Pizza",
+    "name": "Pizza 39",
+    "description": "Delicious pizza item number 39, made with fresh ingredients.",
+    "price": "342.28",
+    "max_price": "389.72",
+    "stock": 42,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796789",
+    "update_at": "2025-11-04T05:14:05.796791",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza39_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "category": "Pasta",
+    "name": "Pasta 40",
+    "description": "Delicious pasta item number 40, made with fresh ingredients.",
+    "price": "400.83",
+    "max_price": "411.06",
+    "stock": 17,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796809",
+    "update_at": "2025-11-04T05:14:05.796810",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 15,
+    "added_to_cart_count": 15,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta40_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta40_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "category": "Drinks",
+    "name": "Drinks 41",
+    "description": "Delicious drinks item number 41, made with fresh ingredients.",
+    "price": "135.99",
+    "max_price": "151.65",
+    "stock": 43,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796825",
+    "update_at": "2025-11-04T05:14:05.796827",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.25,
+    "review_count": 4,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks41_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "category": "Drinks",
+    "name": "Drinks 42",
+    "description": "Delicious drinks item number 42, made with fresh ingredients.",
+    "price": "279.96",
+    "max_price": "325.65",
+    "stock": 73,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      },
+      {
+        "id": 3,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796838",
+    "update_at": "2025-11-04T05:14:05.796840",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 3,
+    "added_to_cart_count": 3,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks42_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "category": "Sandwich",
+    "name": "Sandwich 43",
+    "description": "Delicious sandwich item number 43, made with fresh ingredients.",
+    "price": "524.79",
+    "max_price": "551.52",
+    "stock": 56,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796859",
+    "update_at": "2025-11-04T05:14:05.796861",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 4,
+    "addedtocard": 18,
+    "added_to_cart_count": 18,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich43_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Pasta",
+    "name": "Pasta 44",
+    "description": "Delicious pasta item number 44, made with fresh ingredients.",
+    "price": "292.70",
+    "max_price": "333.94",
+    "stock": 99,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796875",
+    "update_at": "2025-11-04T05:14:05.796877",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 1,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta44_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "category": "Drinks",
+    "name": "Drinks 45",
+    "description": "Delicious drinks item number 45, made with fresh ingredients.",
+    "price": "141.42",
+    "max_price": "151.97",
+    "stock": 31,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796891",
+    "update_at": "2025-11-04T05:14:05.796893",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.33,
+    "review_count": 3,
+    "addedtocard": 8,
+    "added_to_cart_count": 8,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks45_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "category": "Burger",
+    "name": "Burger 46",
+    "description": "Delicious burger item number 46, made with fresh ingredients.",
+    "price": "271.69",
+    "max_price": "295.48",
+    "stock": 57,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796904",
+    "update_at": "2025-11-04T05:14:05.796906",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 18,
+    "added_to_cart_count": 18,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger46_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "category": "Salad",
+    "name": "Salad 47",
+    "description": "Delicious salad item number 47, made with fresh ingredients.",
+    "price": "161.16",
+    "max_price": "199.42",
+    "stock": 42,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796921",
+    "update_at": "2025-11-04T05:14:05.796923",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.67,
+    "review_count": 3,
+    "addedtocard": 12,
+    "added_to_cart_count": 12,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad47_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad47_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad47_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "category": "Sandwich",
+    "name": "Sandwich 48",
+    "description": "Delicious sandwich item number 48, made with fresh ingredients.",
+    "price": "571.53",
+    "max_price": "620.26",
+    "stock": 83,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796937",
+    "update_at": "2025-11-04T05:14:05.796939",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.33,
+    "review_count": 3,
+    "addedtocard": 20,
+    "added_to_cart_count": 20,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich48_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich48_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "category": "Soup",
+    "name": "Soup 49",
+    "description": "Delicious soup item number 49, made with fresh ingredients.",
+    "price": "138.11",
+    "max_price": "160.81",
+    "stock": 71,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796957",
+    "update_at": "2025-11-04T05:14:05.796961",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.5,
+    "review_count": 4,
+    "addedtocard": 19,
+    "added_to_cart_count": 19,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup49_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup49_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup49_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "category": "Sandwich",
+    "name": "Sandwich 50",
+    "description": "Delicious sandwich item number 50, made with fresh ingredients.",
+    "price": "314.69",
+    "max_price": "358.59",
+    "stock": 67,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796977",
+    "update_at": "2025-11-04T05:14:05.796978",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.25,
+    "review_count": 4,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich50_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "category": "Salad",
+    "name": "Salad 51",
+    "description": "Delicious salad item number 51, made with fresh ingredients.",
+    "price": "202.14",
+    "max_price": "226.04",
+    "stock": 21,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.796989",
+    "update_at": "2025-11-04T05:14:05.796991",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 11,
+    "added_to_cart_count": 11,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad51_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad51_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "category": "Fries",
+    "name": "Fries 52",
+    "description": "Delicious fries item number 52, made with fresh ingredients.",
+    "price": "393.34",
+    "max_price": "410.06",
+    "stock": 46,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      },
+      {
+        "id": 3,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797004",
+    "update_at": "2025-11-04T05:14:05.797006",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 1,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries52_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "category": "Drinks",
+    "name": "Drinks 53",
+    "description": "Delicious drinks item number 53, made with fresh ingredients.",
+    "price": "507.57",
+    "max_price": "529.04",
+    "stock": 77,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797022",
+    "update_at": "2025-11-04T05:14:05.797024",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.67,
+    "review_count": 3,
+    "addedtocard": 11,
+    "added_to_cart_count": 11,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks53_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks53_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "category": "Pasta",
+    "name": "Pasta 54",
+    "description": "Delicious pasta item number 54, made with fresh ingredients.",
+    "price": "310.49",
+    "max_price": "354.63",
+    "stock": 30,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797038",
+    "update_at": "2025-11-04T05:14:05.797040",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 1,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta54_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta54_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta54_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "category": "Fries",
+    "name": "Fries 55",
+    "description": "Delicious fries item number 55, made with fresh ingredients.",
+    "price": "505.07",
+    "max_price": "547.09",
+    "stock": 79,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797053",
+    "update_at": "2025-11-04T05:14:05.797055",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 1,
+    "addedtocard": 7,
+    "added_to_cart_count": 7,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries55_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries55_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "category": "Sandwich",
+    "name": "Sandwich 56",
+    "description": "Delicious sandwich item number 56, made with fresh ingredients.",
+    "price": "191.78",
+    "max_price": "208.77",
+    "stock": 90,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797072",
+    "update_at": "2025-11-04T05:14:05.797074",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 3,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich56_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich56_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "category": "Soup",
+    "name": "Soup 57",
+    "description": "Delicious soup item number 57, made with fresh ingredients.",
+    "price": "354.54",
+    "max_price": "378.44",
+    "stock": 19,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797090",
+    "update_at": "2025-11-04T05:14:05.797092",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 4,
+    "addedtocard": 5,
+    "added_to_cart_count": 5,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup57_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup57_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup57_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "category": "Dessert",
+    "name": "Dessert 58",
+    "description": "Delicious dessert item number 58, made with fresh ingredients.",
+    "price": "545.88",
+    "max_price": "588.17",
+    "stock": 14,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797107",
+    "update_at": "2025-11-04T05:14:05.797109",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 3,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert58_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert58_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert58_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "category": "Dessert",
+    "name": "Dessert 59",
+    "description": "Delicious dessert item number 59, made with fresh ingredients.",
+    "price": "328.87",
+    "max_price": "371.75",
+    "stock": 47,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797119",
+    "update_at": "2025-11-04T05:14:05.797121",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 10,
+    "added_to_cart_count": 10,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert59_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "category": "Sandwich",
+    "name": "Sandwich 60",
+    "description": "Delicious sandwich item number 60, made with fresh ingredients.",
+    "price": "544.39",
+    "max_price": "565.41",
+    "stock": 72,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797131",
+    "update_at": "2025-11-04T05:14:05.797133",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 9,
+    "added_to_cart_count": 9,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich60_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "category": "Drinks",
+    "name": "Drinks 61",
+    "description": "Delicious drinks item number 61, made with fresh ingredients.",
+    "price": "577.73",
+    "max_price": "590.53",
+    "stock": 7,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      },
+      {
+        "id": 2,
+        "name": "Cheese"
+      },
+      {
+        "id": 3,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797150",
+    "update_at": "2025-11-04T05:14:05.797152",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks61_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "category": "Sandwich",
+    "name": "Sandwich 62",
+    "description": "Delicious sandwich item number 62, made with fresh ingredients.",
+    "price": "440.01",
+    "max_price": "455.80",
+    "stock": 8,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797168",
+    "update_at": "2025-11-04T05:14:05.797170",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.8,
+    "review_count": 5,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich62_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich62_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "category": "Sushi",
+    "name": "Sushi 63",
+    "description": "Delicious sushi item number 63, made with fresh ingredients.",
+    "price": "166.78",
+    "max_price": "194.75",
+    "stock": 77,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797186",
+    "update_at": "2025-11-04T05:14:05.797187",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.75,
+    "review_count": 4,
+    "addedtocard": 5,
+    "added_to_cart_count": 5,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi63_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi63_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "category": "Pizza",
+    "name": "Pizza 64",
+    "description": "Delicious pizza item number 64, made with fresh ingredients.",
+    "price": "183.49",
+    "max_price": "194.19",
+    "stock": 76,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797207",
+    "update_at": "2025-11-04T05:14:05.797208",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.4,
+    "review_count": 5,
+    "addedtocard": 10,
+    "added_to_cart_count": 10,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza64_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza64_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza64_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "category": "Fries",
+    "name": "Fries 65",
+    "description": "Delicious fries item number 65, made with fresh ingredients.",
+    "price": "451.19",
+    "max_price": "466.48",
+    "stock": 10,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797226",
+    "update_at": "2025-11-04T05:14:05.797240",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.5,
+    "review_count": 4,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries65_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries65_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "category": "Pizza",
+    "name": "Pizza 66",
+    "description": "Delicious pizza item number 66, made with fresh ingredients.",
+    "price": "384.87",
+    "max_price": "407.13",
+    "stock": 38,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797258",
+    "update_at": "2025-11-04T05:14:05.797259",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.5,
+    "review_count": 2,
+    "addedtocard": 10,
+    "added_to_cart_count": 10,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza66_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza66_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "category": "Sandwich",
+    "name": "Sandwich 67",
+    "description": "Delicious sandwich item number 67, made with fresh ingredients.",
+    "price": "145.25",
+    "max_price": "169.99",
+    "stock": 36,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      },
+      {
+        "id": 2,
+        "name": "SeaFood"
+      },
+      {
+        "id": 3,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797274",
+    "update_at": "2025-11-04T05:14:05.797275",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 1,
+    "addedtocard": 17,
+    "added_to_cart_count": 17,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich67_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich67_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich67_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "category": "Soup",
+    "name": "Soup 68",
+    "description": "Delicious soup item number 68, made with fresh ingredients.",
+    "price": "593.14",
+    "max_price": "604.26",
+    "stock": 48,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797295",
+    "update_at": "2025-11-04T05:14:05.797297",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 2,
+    "addedtocard": 9,
+    "added_to_cart_count": 9,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup68_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup68_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "category": "Salad",
+    "name": "Salad 69",
+    "description": "Delicious salad item number 69, made with fresh ingredients.",
+    "price": "317.69",
+    "max_price": "338.99",
+    "stock": 31,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797310",
+    "update_at": "2025-11-04T05:14:05.797311",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 19,
+    "added_to_cart_count": 19,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad69_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad69_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "category": "Drinks",
+    "name": "Drinks 70",
+    "description": "Delicious drinks item number 70, made with fresh ingredients.",
+    "price": "503.30",
+    "max_price": "540.53",
+    "stock": 31,
+    "tags": [
+      {
+        "id": 1,
+        "name": "SeaFood"
+      },
+      {
+        "id": 2,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 3,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797328",
+    "update_at": "2025-11-04T05:14:05.797331",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks70_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks70_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks70_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "category": "Sushi",
+    "name": "Sushi 71",
+    "description": "Delicious sushi item number 71, made with fresh ingredients.",
+    "price": "332.31",
+    "max_price": "353.57",
+    "stock": 82,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797358",
+    "update_at": "2025-11-04T05:14:05.797360",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.4,
+    "review_count": 5,
+    "addedtocard": 8,
+    "added_to_cart_count": 8,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi71_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "category": "Soup",
+    "name": "Soup 72",
+    "description": "Delicious soup item number 72, made with fresh ingredients.",
+    "price": "508.90",
+    "max_price": "545.58",
+    "stock": 40,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797376",
+    "update_at": "2025-11-04T05:14:05.797378",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 2,
+    "addedtocard": 12,
+    "added_to_cart_count": 12,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup72_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup72_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "category": "Sushi",
+    "name": "Sushi 73",
+    "description": "Delicious sushi item number 73, made with fresh ingredients.",
+    "price": "198.88",
+    "max_price": "228.07",
+    "stock": 88,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Sweet"
+      },
+      {
+        "id": 3,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797392",
+    "update_at": "2025-11-04T05:14:05.797393",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 1,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi73_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi73_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "category": "Fries",
+    "name": "Fries 74",
+    "description": "Delicious fries item number 74, made with fresh ingredients.",
+    "price": "365.54",
+    "max_price": "405.74",
+    "stock": 20,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797410",
+    "update_at": "2025-11-04T05:14:05.797412",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.33,
+    "review_count": 3,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries74_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries74_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries74_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "category": "Salad",
+    "name": "Salad 75",
+    "description": "Delicious salad item number 75, made with fresh ingredients.",
+    "price": "543.21",
+    "max_price": "566.09",
+    "stock": 81,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797469",
+    "update_at": "2025-11-04T05:14:05.797471",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.75,
+    "review_count": 4,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad75_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad75_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/salad75_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "category": "Fries",
+    "name": "Fries 76",
+    "description": "Delicious fries item number 76, made with fresh ingredients.",
+    "price": "107.06",
+    "max_price": "141.85",
+    "stock": 20,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797490",
+    "update_at": "2025-11-04T05:14:05.797492",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 4,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries76_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries76_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries76_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "category": "Fries",
+    "name": "Fries 77",
+    "description": "Delicious fries item number 77, made with fresh ingredients.",
+    "price": "339.70",
+    "max_price": "363.58",
+    "stock": 79,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      },
+      {
+        "id": 2,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797505",
+    "update_at": "2025-11-04T05:14:05.797507",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 1,
+    "addedtocard": 7,
+    "added_to_cart_count": 7,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries77_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries77_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries77_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "category": "Dessert",
+    "name": "Dessert 78",
+    "description": "Delicious dessert item number 78, made with fresh ingredients.",
+    "price": "350.87",
+    "max_price": "374.86",
+    "stock": 95,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797519",
+    "update_at": "2025-11-04T05:14:05.797521",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 1,
+    "added_to_cart_count": 1,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert78_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert78_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert78_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "category": "Sandwich",
+    "name": "Sandwich 79",
+    "description": "Delicious sandwich item number 79, made with fresh ingredients.",
+    "price": "511.42",
+    "max_price": "542.95",
+    "stock": 80,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797551",
+    "update_at": "2025-11-04T05:14:05.797553",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich79_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich79_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich79_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "category": "Burger",
+    "name": "Burger 80",
+    "description": "Delicious burger item number 80, made with fresh ingredients.",
+    "price": "319.88",
+    "max_price": "363.12",
+    "stock": 26,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      },
+      {
+        "id": 3,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797582",
+    "update_at": "2025-11-04T05:14:05.797584",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.6,
+    "review_count": 5,
+    "addedtocard": 15,
+    "added_to_cart_count": 15,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger80_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger80_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "category": "Soup",
+    "name": "Soup 81",
+    "description": "Delicious soup item number 81, made with fresh ingredients.",
+    "price": "414.92",
+    "max_price": "427.65",
+    "stock": 30,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beverage"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797600",
+    "update_at": "2025-11-04T05:14:05.797601",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.33,
+    "review_count": 3,
+    "addedtocard": 8,
+    "added_to_cart_count": 8,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup81_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup81_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "category": "Drinks",
+    "name": "Drinks 82",
+    "description": "Delicious drinks item number 82, made with fresh ingredients.",
+    "price": "570.07",
+    "max_price": "599.62",
+    "stock": 57,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      },
+      {
+        "id": 3,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797617",
+    "update_at": "2025-11-04T05:14:05.797618",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 20,
+    "added_to_cart_count": 20,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks82_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks82_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks82_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "category": "Drinks",
+    "name": "Drinks 83",
+    "description": "Delicious drinks item number 83, made with fresh ingredients.",
+    "price": "338.95",
+    "max_price": "382.17",
+    "stock": 26,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 3,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797639",
+    "update_at": "2025-11-04T05:14:05.797641",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 2,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks83_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks83_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks83_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "category": "Pasta",
+    "name": "Pasta 84",
+    "description": "Delicious pasta item number 84, made with fresh ingredients.",
+    "price": "299.00",
+    "max_price": "343.50",
+    "stock": 17,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Vegetarian"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797661",
+    "update_at": "2025-11-04T05:14:05.797663",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 2,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta84_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta84_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta84_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "category": "Pasta",
+    "name": "Pasta 85",
+    "description": "Delicious pasta item number 85, made with fresh ingredients.",
+    "price": "271.53",
+    "max_price": "297.27",
+    "stock": 66,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      },
+      {
+        "id": 2,
+        "name": "Chicken"
+      },
+      {
+        "id": 3,
+        "name": "SeaFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797679",
+    "update_at": "2025-11-04T05:14:05.797681",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.75,
+    "review_count": 4,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta85_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta85_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta85_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "category": "Burger",
+    "name": "Burger 86",
+    "description": "Delicious burger item number 86, made with fresh ingredients.",
+    "price": "396.31",
+    "max_price": "440.91",
+    "stock": 56,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      },
+      {
+        "id": 2,
+        "name": "Beverage"
+      },
+      {
+        "id": 3,
+        "name": "FastFood"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797698",
+    "update_at": "2025-11-04T05:14:05.797700",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 2,
+    "addedtocard": 6,
+    "added_to_cart_count": 6,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/burger86_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "category": "Fries",
+    "name": "Fries 87",
+    "description": "Delicious fries item number 87, made with fresh ingredients.",
+    "price": "535.79",
+    "max_price": "550.36",
+    "stock": 70,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797715",
+    "update_at": "2025-11-04T05:14:05.797716",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.0,
+    "review_count": 2,
+    "addedtocard": 5,
+    "added_to_cart_count": 5,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries87_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "category": "Fries",
+    "name": "Fries 88",
+    "description": "Delicious fries item number 88, made with fresh ingredients.",
+    "price": "466.62",
+    "max_price": "514.80",
+    "stock": 27,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797739",
+    "update_at": "2025-11-04T05:14:05.797740",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 4,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.6,
+    "review_count": 5,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries88_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries88_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries88_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "category": "Fries",
+    "name": "Fries 89",
+    "description": "Delicious fries item number 89, made with fresh ingredients.",
+    "price": "281.93",
+    "max_price": "303.03",
+    "stock": 39,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797755",
+    "update_at": "2025-11-04T05:14:05.797756",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.67,
+    "review_count": 3,
+    "addedtocard": 10,
+    "added_to_cart_count": 10,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries89_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "category": "Sandwich",
+    "name": "Sandwich 90",
+    "description": "Delicious sandwich item number 90, made with fresh ingredients.",
+    "price": "448.61",
+    "max_price": "473.56",
+    "stock": 22,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      },
+      {
+        "id": 2,
+        "name": "Beverage"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797777",
+    "update_at": "2025-11-04T05:14:05.797778",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 1,
+    "addedtocard": 1,
+    "added_to_cart_count": 1,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich90_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich90_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "category": "Pasta",
+    "name": "Pasta 91",
+    "description": "Delicious pasta item number 91, made with fresh ingredients.",
+    "price": "599.58",
+    "max_price": "636.96",
+    "stock": 10,
+    "tags": [
+      {
+        "id": 1,
+        "name": "FastFood"
+      },
+      {
+        "id": 2,
+        "name": "Vegetarian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797810",
+    "update_at": "2025-11-04T05:14:05.797811",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 3.8,
+    "review_count": 5,
+    "addedtocard": 11,
+    "added_to_cart_count": 11,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta91_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta91_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta91_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "category": "Pasta",
+    "name": "Pasta 92",
+    "description": "Delicious pasta item number 92, made with fresh ingredients.",
+    "price": "479.28",
+    "max_price": "524.14",
+    "stock": 53,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Sweet"
+      },
+      {
+        "id": 2,
+        "name": "Beef"
+      },
+      {
+        "id": 3,
+        "name": "Sweet"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797828",
+    "update_at": "2025-11-04T05:14:05.797829",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.5,
+    "review_count": 4,
+    "addedtocard": 7,
+    "added_to_cart_count": 7,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta92_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pasta92_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "category": "Fries",
+    "name": "Fries 93",
+    "description": "Delicious fries item number 93, made with fresh ingredients.",
+    "price": "504.27",
+    "max_price": "547.80",
+    "stock": 91,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797845",
+    "update_at": "2025-11-04T05:14:05.797846",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 3,
+    "addedtocard": 12,
+    "added_to_cart_count": 12,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries93_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/fries93_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "category": "Drinks",
+    "name": "Drinks 94",
+    "description": "Delicious drinks item number 94, made with fresh ingredients.",
+    "price": "531.24",
+    "max_price": "559.13",
+    "stock": 14,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797858",
+    "update_at": "2025-11-04T05:14:05.797860",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 18,
+    "added_to_cart_count": 18,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks94_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/drinks94_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "category": "Sandwich",
+    "name": "Sandwich 95",
+    "description": "Delicious sandwich item number 95, made with fresh ingredients.",
+    "price": "577.78",
+    "max_price": "606.49",
+    "stock": 36,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797877",
+    "update_at": "2025-11-04T05:14:05.797879",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.2,
+    "review_count": 5,
+    "addedtocard": 16,
+    "added_to_cart_count": 16,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich95_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sandwich95_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "category": "Dessert",
+    "name": "Dessert 96",
+    "description": "Delicious dessert item number 96, made with fresh ingredients.",
+    "price": "371.93",
+    "max_price": "400.70",
+    "stock": 98,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797891",
+    "update_at": "2025-11-04T05:14:05.797892",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 4,
+    "added_to_cart_count": 4,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert96_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert96_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "category": "Sushi",
+    "name": "Sushi 97",
+    "description": "Delicious sushi item number 97, made with fresh ingredients.",
+    "price": "307.36",
+    "max_price": "326.53",
+    "stock": 17,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Chicken"
+      },
+      {
+        "id": 2,
+        "name": "Spicy"
+      },
+      {
+        "id": 3,
+        "name": "Vegetarian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797906",
+    "update_at": "2025-11-04T05:14:05.797907",
+    "reviews": [],
+    "average_rating": 0,
+    "review_count": 0,
+    "addedtocard": 13,
+    "added_to_cart_count": 13,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi97_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi97_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/sushi97_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "category": "Pizza",
+    "name": "Pizza 98",
+    "description": "Delicious pizza item number 98, made with fresh ingredients.",
+    "price": "475.32",
+    "max_price": "504.97",
+    "stock": 73,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Italian"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797928",
+    "update_at": "2025-11-04T05:14:05.797930",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 3,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.2,
+    "review_count": 5,
+    "addedtocard": 17,
+    "added_to_cart_count": 17,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza98_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza98_2.jpg"
+      },
+      {
+        "id": 3,
+        "file": "https://res.cloudinary.com/demo/image/upload/pizza98_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "category": "Dessert",
+    "name": "Dessert 99",
+    "description": "Delicious dessert item number 99, made with fresh ingredients.",
+    "price": "164.49",
+    "max_price": "183.13",
+    "stock": 98,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Beef"
+      },
+      {
+        "id": 2,
+        "name": "Italian"
+      },
+      {
+        "id": 3,
+        "name": "Cheese"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797948",
+    "update_at": "2025-11-04T05:14:05.797950",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 4,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 3,
+        "user": "User3",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 4,
+        "user": "User4",
+        "rating": 3,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 5,
+        "user": "User5",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 4.0,
+    "review_count": 5,
+    "addedtocard": 14,
+    "added_to_cart_count": 14,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert99_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/dessert99_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "category": "Soup",
+    "name": "Soup 100",
+    "description": "Delicious soup item number 100, made with fresh ingredients.",
+    "price": "277.48",
+    "max_price": "291.38",
+    "stock": 88,
+    "tags": [
+      {
+        "id": 1,
+        "name": "Spicy"
+      }
+    ],
+    "created_at": "2025-11-04T05:14:05.797964",
+    "update_at": "2025-11-04T05:14:05.797966",
+    "reviews": [
+      {
+        "id": 1,
+        "user": "User1",
+        "rating": 5,
+        "comment": "Nice product!"
+      },
+      {
+        "id": 2,
+        "user": "User2",
+        "rating": 5,
+        "comment": "Nice product!"
+      }
+    ],
+    "average_rating": 5.0,
+    "review_count": 2,
+    "addedtocard": 0,
+    "added_to_cart_count": 0,
+    "productimgs": [
+      {
+        "id": 1,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup100_1.jpg"
+      },
+      {
+        "id": 2,
+        "file": "https://res.cloudinary.com/demo/image/upload/soup100_2.jpg"
+      }
+    ]
+  }
+]
