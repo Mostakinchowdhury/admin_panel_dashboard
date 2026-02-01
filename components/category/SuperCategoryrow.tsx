@@ -15,7 +15,7 @@ const SuperCategoryrow = ({
   className?: string;
   supercat: Supercategory;
   setloading: Dispatch<SetStateAction<boolean>>;
-  handlefetch: () => void | Promise<void>;
+  handlefetch: () => Promise<void>;
 }) => {
   const [checked, setChecked] = useState(false);
   // const ref = useRef<HTMLVideoElement>(null);

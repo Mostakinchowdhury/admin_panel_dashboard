@@ -1,7 +1,7 @@
-'use client'
-import { hanldelogin } from '@/app/api/auth'
-import useglobal from '@/app/context/Globalcontex'
-import { Button } from '@/components/ui/button'
+'use client';
+import { hanldelogin } from '@/app/api/auth';
+import useglobal from '@/app/context/Globalcontex';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogClose,
@@ -10,31 +10,40 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { ChangeEvent, FormEvent, ReactNode, useState } from 'react'
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { ChangeEvent, FormEvent, ReactNode, useState } from 'react';
 
 export function Dialoglogin({ children }: { children: ReactNode }) {
-  const { setauth_loading, setis_authenticated, auth_loading } = useglobal()
+  const {
+    setauth_loading,
+    setis_authenticated,
+    auth_loading,
+    setrole,
+    seterror,
+  } = useglobal();
   const [form, setform] = useState({
     email: '',
-    password: ''
-  })
+    password: '',
+  });
   const handlechange = (e: ChangeEvent<HTMLInputElement>) => {
-    const name = e.target.name
-    const value = e.target.value
-    setform({ ...form, [name]: value })
-  }
+    const name = e.target.name;
+    const value = e.target.value;
+    setform({ ...form, [name]: value });
+  };
   const handleform = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    await hanldelogin(form, setis_authenticated, setauth_loading)
-    setform({
-      email: '',
-      password: ''
-    })
-  }
+    e.preventDefault();
+    await hanldelogin(
+      form,
+      setis_authenticated,
+      setauth_loading,
+      setrole,
+      seterror,
+      setform,
+    );
+  };
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
@@ -43,7 +52,8 @@ export function Dialoglogin({ children }: { children: ReactNode }) {
           <DialogHeader>
             <DialogTitle>Login here</DialogTitle>
             <DialogDescription>
-              Make changes to your profile here. Click save when you&apos;re done.
+              Make changes to your profile here. Click save when you&apos;re
+              done.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4">
@@ -74,10 +84,12 @@ export function Dialoglogin({ children }: { children: ReactNode }) {
             <DialogClose asChild>
               <Button variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit">{auth_loading ? 'loging...' : 'login'}</Button>
+            <Button type="submit">
+              {auth_loading ? 'loging...' : 'login'}
+            </Button>
           </DialogFooter>
         </form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

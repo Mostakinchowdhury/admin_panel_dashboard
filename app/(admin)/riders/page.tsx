@@ -23,7 +23,7 @@ const Rider_page = () => {
   const [page, setpage] = useState<number>(1);
   const [riders, setriders] = useState<Rider[]>([]);
   const [loading, setloading] = useState<boolean>(false);
-  const { rider_sortby } = useRidercontext() ?? 'df';
+  const { rider_sortby } = useRidercontext();
   const { sloading, summery } = useSummery();
   const {
     exinput: searchvalue,

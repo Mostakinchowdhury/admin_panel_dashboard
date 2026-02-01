@@ -1,14 +1,17 @@
 import { toast } from 'sonner';
-import { PaginatedOrderResponse } from '../type/orders';
 import api from '../utils/api';
-import { OrderProof } from '../type/orderprove';
 import { Supercategory } from '../type/supercate';
 import { Category } from '../type/category';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchosupercategories({
   setloading,
   setsupercategories,
   search = '',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setsupercategories: Dispatch<SetStateAction<Supercategory[]>>;
+  search?: string;
 }) {
   setloading(true);
   search = search.trim();
@@ -44,6 +47,10 @@ export async function fetchcategories({
   setloading,
   setcategories,
   search = '',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setcategories: Dispatch<SetStateAction<Category[]>>;
+  search?: string;
 }) {
   setloading(true);
   search = search.trim();

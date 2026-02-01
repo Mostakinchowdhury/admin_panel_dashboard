@@ -15,7 +15,6 @@ import { FaSquarePhone } from 'react-icons/fa6';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { ChangeEvent, ReactNode, useState } from 'react';
-import { ord } from './Orderrow';
 import { Order } from '@/app/type/orders';
 import { MdEmail, MdInventory, MdOutlineDateRange } from 'react-icons/md';
 import { GrStatusInfoSmall } from 'react-icons/gr';

@@ -1,45 +1,71 @@
-import inbox_data, { inboxes_type } from '@/assets/datas/inbox'
-import { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction, useState } from 'react'
-import { IoIosSend } from 'react-icons/io'
-import { Button } from '../ui/button'
-import { Input } from '../ui/input'
+import { inboxes_type } from '@/assets/datas/inbox';
+import {
+  ChangeEvent,
+  Dispatch,
+  KeyboardEvent,
+  SetStateAction,
+  useState,
+} from 'react';
+import { IoIosSend } from 'react-icons/io';
+import { toast } from 'sonner';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import api from '@/app/utils/api';
+import Sloading from '../nessasery/Sloading';
 
 export default function Inboxinput({
   className,
   recever,
-  setinbox
+  fetchinbox,
 }: {
-  className?: string
-  recever: number
-  setinbox: Dispatch<SetStateAction<inboxes_type[]>>
+  className?: string;
+  recever: number;
+  fetchinbox: () => Promise<void>;
+  setinbox: Dispatch<SetStateAction<inboxes_type[]>>;
 }) {
-  const [input, setinput] = useState<string>('')
-  const handleSend = () => {
+  const [input, setinput] = useState<string>('');
+  const [loading, setloading] = useState<boolean>(false);
+  const handleSend = async () => {
     if (input === '') {
-      alert('Empty Message not allow to send write something at first')
-      return
+      toast.error('Please write something first');
+      return;
     }
-    setinbox((pre) => [
-      ...pre,
-      {
-        id: inbox_data[inbox_data.length - 1]?.id + 1,
-        sender_id: 4,
-        recever_id: recever,
+    setloading(true);
+    try {
+      await api.post('support/chatting/', {
+        receiver: recever,
         message: input,
-        send_at: new Date().toISOString(),
-        isseen: false
-      }
-    ])
-    setinput('')
-  }
+      });
+      setinput('');
+      fetchinbox();
+    } catch (error: unknown) {
+      console.error('Failed to send message:', error);
+      const apiError = (
+        error as {
+          response?: { data?: { detail?: string; message?: string } };
+        }
+      )?.response?.data;
+      const message =
+        apiError?.detail ||
+        apiError?.message ||
+        (Array.isArray(apiError)
+          ? apiError[0]
+          : Object.values(apiError || {}).flat()[0]) ||
+        'Failed to send message';
+      toast.error(message);
+    } finally {
+      setloading(false);
+    }
+  };
   const handlechange = (e: ChangeEvent<HTMLInputElement>) => {
-    setinput(e.target.value)
-  }
+    setinput(e.target.value);
+  };
   const handlekeydown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key == 'Enter') {
-      handleSend()
+      handleSend();
     }
-  }
+  };
+
   return (
     <div
       className={`${
@@ -56,10 +82,18 @@ export default function Inboxinput({
       <Button
         className="flex items-center gap-1 bg-green-100 hover:bg-gray-100 h-full"
         onClick={handleSend}
+        disabled={loading}
       >
-        <p className="txtstlh4">Send</p>
-        <IoIosSend size={25} color="#000" />
+        {' '}
+        {loading ? (
+          <Sloading size={25} />
+        ) : (
+          <>
+            <p className="txtstlh4">Send</p>
+            <IoIosSend size={25} color="#000" />
+          </>
+        )}
       </Button>
     </div>
-  )
+  );
 }

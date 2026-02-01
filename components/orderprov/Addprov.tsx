@@ -35,6 +35,8 @@ export function Addprovdiologwrap({
   handlefetch,
   children,
 }: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  handlefetch: () => void | Promise<void>;
   children: ReactNode;
 }) {
   const [form, setform] = useState<{
@@ -52,9 +54,9 @@ export function Addprovdiologwrap({
 
   const handlechange = (e: ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
-    let value = e.target.value;
+    let value: string | File | null = e.target.value;
     if (name == 'proved_image' || name == 'proved_video') {
-      value = e.target?.files[0];
+      value = e.target.files?.[0] || null;
     }
     setform({ ...form, [name]: value });
   };

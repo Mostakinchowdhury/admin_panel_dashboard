@@ -39,6 +39,8 @@ export function Editprovdiologwrap({
   children,
   id,
 }: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  handlefetch: () => void | Promise<void>;
   id: number | string;
   children: ReactNode;
 }) {
@@ -57,9 +59,9 @@ export function Editprovdiologwrap({
 
   const handlechange = (e: ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
-    let value = e.target.value;
+    let value: string | File | null = e.target.value;
     if (name == 'proved_image' || name == 'proved_video') {
-      value = e.target?.files[0];
+      value = e.target.files?.[0] || null;
     }
     setform({ ...form, [name]: value });
   };
@@ -112,7 +114,7 @@ export function Editprovdiologwrap({
       setloading(false);
     }
   };
-  const setvalue = value => {
+  const setvalue = (value: string) => {
     setform({ ...form, status: value });
   };
   return (

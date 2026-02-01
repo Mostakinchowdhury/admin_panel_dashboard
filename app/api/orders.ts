@@ -1,6 +1,7 @@
 import { toast } from 'sonner';
-import { PaginatedOrderResponse } from '../type/orders';
+import { Order, PaginatedOrderResponse } from '../type/orders';
 import api from '../utils/api';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchorders({
   setloading,
@@ -10,6 +11,14 @@ export async function fetchorders({
   page = 1,
   search = '',
   sortby = 'df',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setorders: Dispatch<SetStateAction<Order[]>>;
+  settotalpages: Dispatch<SetStateAction<number>>;
+  status?: string;
+  page?: number;
+  search?: string;
+  sortby?: string;
 }) {
   setloading(true);
   search = search.trim();

@@ -1,6 +1,7 @@
 import { toast } from 'sonner';
 import api from '../utils/api';
-import { ShopsResponse } from '../type/Partners';
+import { Shop, ShopsResponse } from '../type/Partners';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchpartners({
   setloading,
@@ -10,6 +11,14 @@ export async function fetchpartners({
   page = 1,
   search = '',
   sortby = 'df',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setpartners: Dispatch<SetStateAction<Shop[]>>;
+  settotalpages: Dispatch<SetStateAction<number>>;
+  status?: string;
+  page?: number;
+  search?: string;
+  sortby?: string;
 }) {
   setloading(true);
   search = search.trim();

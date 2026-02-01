@@ -35,16 +35,10 @@ export const Headerprovider = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default function useHeader(): {
-  searchvalue: string;
-  exinput: string;
-  setexinput: Dispatch<SetStateAction<string>>;
-  setsearchvalue: Dispatch<SetStateAction<string>>;
-  notificationopen: boolean;
-  setnotificationopen: Dispatch<SetStateAction<boolean>>;
-  handleinputbtnclick: () => void;
-  profile: string | StaticImageData;
-  setprofile: Dispatch<SetStateAction<string | StaticImageData>>;
-} {
-  return useContext(headercontext);
+export default function useHeader() {
+  const context = useContext(headercontext);
+  if (!context) {
+    throw new Error('useHeader must be used within a Headerprovider');
+  }
+  return context;
 }

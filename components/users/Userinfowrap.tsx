@@ -119,13 +119,13 @@ export function Userinfodiologwrap({
               <h3 className="manrope font-bold">Birth Date :</h3>
             </div>
             <h3>
-              {(user.profile &&
-                new Date(user.profile.birth_date).toLocaleString('us', {
-                  year: 'numeric',
-                  month: 'short',
-                  day: '2-digit',
-                })) ||
-                'Not set'}
+              {user.profile && user.profile.birth_date
+                ? new Date(user.profile.birth_date).toLocaleString('us', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: '2-digit',
+                  })
+                : 'Not set'}
             </h3>
           </div>
           {/* gender */}

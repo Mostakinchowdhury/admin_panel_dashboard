@@ -15,7 +15,8 @@ export function Selectprov({
   setvalue,
   plac,
 }: {
-  children: React.ReactNode;
+  value: string;
+  setvalue: (val: string) => void;
   plac: string;
 }) {
   return (

@@ -1,6 +1,7 @@
 import { toast } from 'sonner';
 import api from '../utils/api';
-import { PaginatedUsersResponse } from '../type/user';
+import { PaginatedUsersResponse, User } from '../type/user';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchuser({
   setloading,
@@ -11,6 +12,15 @@ export async function fetchuser({
   page = 1,
   search = '',
   sortby = 'df',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setusers: Dispatch<SetStateAction<User[]>>;
+  settotalpages: Dispatch<SetStateAction<number>>;
+  setcount: Dispatch<SetStateAction<number>>;
+  status?: string;
+  page?: number;
+  search?: string;
+  sortby?: string;
 }) {
   setloading(true);
   search = search.trim();

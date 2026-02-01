@@ -9,7 +9,6 @@ import { IoSettings } from 'react-icons/io5';
 import {
   MdDashboard,
   MdDirectionsBike,
-  MdInventory,
   MdOutlineProductionQuantityLimits,
   MdOutlineSupportAgent,
 } from 'react-icons/md';
@@ -50,7 +49,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/'}
+              href={'/' as any}
               className={`${
                 path == '/' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -79,7 +78,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/cateandsupcate'}
+              href={'/cateandsupcate' as any}
               className={`${
                 path == '/cateandsupcate'
                   ? 'bg-secondary text-font1'
@@ -110,7 +109,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/orders'}
+              href={'/orders' as any}
               className={`${
                 path == '/orders' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -139,7 +138,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/orderprove'}
+              href={'/orderprove' as any}
               className={`${
                 path == '/orderprove' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -168,7 +167,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/users'}
+              href={'/users' as any}
               className={`${
                 path == '/users' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -197,7 +196,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/products'}
+              href={'/products' as any}
               className={`${
                 path == '/products' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -226,7 +225,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/partners'}
+              href={'/partners' as any}
               className={`${
                 path == '/partners' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -255,7 +254,7 @@ const Menubars = ({
           }`}
             ></div>
             <Link
-              href={'/riders'}
+              href={'/riders' as any}
               className={`${
                 path == '/riders' ? 'bg-secondary text-font1' : 'text-font2'
               } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -265,35 +264,7 @@ const Menubars = ({
             </Link>
           </li>
         )}
-        {/* reporting */}
-        {role == 'admin' && (
-          <li
-            className="flex items-center gap-1 justify-center relative"
-            onClick={handlecrossclick}
-          >
-            <div
-              className={`size-10 bg-secondary absolute top-0 right-0
-          -translate-y-[15px] translate-x-[20px] rotate-[50deg] ${
-            path == '/reporting' ? 'block' : 'hidden'
-          }`}
-            ></div>
-            <div
-              className={`size-10 bg-secondary absolute bottom-0 right-0
-          translate-y-[15px] translate-x-[20px] rotate-[40deg] ${
-            path == '/reporting' ? 'block' : 'hidden'
-          }`}
-            ></div>
-            <Link
-              href={'/reporting'}
-              className={`${
-                path == '/reporting' ? 'bg-secondary text-font1' : 'text-font2'
-              } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
-            >
-              <BiSolidReport />
-              <h3>Reporting</h3>
-            </Link>
-          </li>
-        )}
+
         {/* support */}
         <li
           className="flex items-center gap-1 justify-center relative"
@@ -312,7 +283,7 @@ const Menubars = ({
           }`}
           ></div>
           <Link
-            href={'/support'}
+            href={'/support' as any}
             className={`${
               path == '/support' ? 'bg-secondary text-font1' : 'text-font2'
             } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}
@@ -339,7 +310,7 @@ const Menubars = ({
           }`}
           ></div>
           <Link
-            href={'/settings'}
+            href={'/settings' as any}
             className={`${
               path == '/settings' ? 'bg-secondary text-font1' : 'text-font2'
             } font-bold text-lg w-full h-11 rounded-l-4xl rounded-r-none flex items-center gap-1 pl-[60px]`}

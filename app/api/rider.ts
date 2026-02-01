@@ -1,7 +1,8 @@
 import { toast } from 'sonner';
 import { PaginatedOrderResponse } from '../type/orders';
 import api from '../utils/api';
-import { PaginatedRiderResponse } from '../type/Riders';
+import { PaginatedRiderResponse, Rider } from '../type/Riders';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchrider({
   setloading,
@@ -11,6 +12,14 @@ export async function fetchrider({
   page = 1,
   search = '',
   sortby = 'df',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setriders: Dispatch<SetStateAction<Rider[]>>;
+  settotalpages: Dispatch<SetStateAction<number>>;
+  status?: string;
+  page?: number;
+  search?: string;
+  sortby?: string;
 }) {
   setloading(true);
   search = search.trim();

@@ -42,6 +42,8 @@ export function EditsuperCatediologwrap({
   data,
   id,
 }: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  handlefetch: () => void | Promise<void>;
   data: Supercategory;
   id: number | string;
   children: ReactNode;
@@ -136,6 +138,8 @@ export function EditCategorydiologwrap({
   data,
   id,
 }: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  handlefetch: () => void | Promise<void>;
   data: Category;
   id: number | string;
   children: ReactNode;
@@ -157,12 +161,12 @@ export function EditCategorydiologwrap({
   // =======================handlechange====================\
 
   const handlechange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const name = e.target.name;
-    let value = e.target.value;
-    if (name == 'image') {
-      value = e.target.files[0];
+    let value: string | File = e.target.value;
+    if (name == 'image' && e.target instanceof HTMLInputElement) {
+      value = e.target.files?.[0] as File;
     }
     setform({ ...form, [name]: value });
   };

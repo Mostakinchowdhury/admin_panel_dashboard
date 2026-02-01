@@ -1,0 +1,79 @@
+components/category/Categoryrow.tsx(88,13): error TS2322: Type '() => void | Promise<void>' is not assignable to type '() => Promise<void>'.
+  Type 'void | Promise<void>' is not assignable to type 'Promise<void>'.
+    Type 'void' is not assignable to type 'Promise<void>'.
+components/category/SuperCategoryrow.tsx(63,13): error TS2322: Type '() => void | Promise<void>' is not assignable to type '() => Promise<void>'.
+  Type 'void | Promise<void>' is not assignable to type 'Promise<void>'.
+    Type 'void' is not assignable to type 'Promise<void>'.
+components/globals/Menubars.tsx(287,15): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<"/reporting">): JSX.Element', gave the following error.
+    Type '"/reporting"' is not assignable to type 'UrlObject | RouteImpl<"/reporting">'.
+  Overload 2 of 2, '(props: LinkProps<"/reporting">): JSX.Element', gave the following error.
+    Type '"/reporting"' is not assignable to type 'UrlObject | RouteImpl<"/reporting">'.
+components/globals/Pagi.tsx(26,14): error TS2741: Property 'href' is missing in type '{ onClick: () => void; }' but required in type 'Pick<LinkRestProps & { href: UrlObject | RouteImpl<unknown>; }, "href">'.
+components/globals/Pagi.tsx(33,16): error TS2741: Property 'href' is missing in type '{ children: number; onClick: () => void; }' but required in type 'Pick<LinkRestProps & { href: UrlObject | RouteImpl<unknown>; }, "href">'.
+components/globals/Pagi.tsx(41,14): error TS2741: Property 'href' is missing in type '{ onClick: () => void; }' but required in type 'Pick<LinkRestProps & { href: UrlObject | RouteImpl<unknown>; }, "href">'.
+components/globals/ServerMypagination.tsx(36,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/globals/ServerMypagination.tsx(56,23): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/globals/ServerMypagination.tsx(66,19): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=1`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=1`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=1`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=1`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=1`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=1`>'.
+components/globals/ServerMypagination.tsx(77,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=3`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=3`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=3`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=3`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=3`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=3`>'.
+components/globals/ServerMypagination.tsx(85,13): error TS2367: This comparison appears to be unintentional because the types '3' and '4' have no overlap.
+components/globals/ServerMypagination.tsx(88,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=4`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=4`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=4`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=4`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=4`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=4`>'.
+components/globals/ServerMypagination.tsx(106,19): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/globals/ServerMypagination.tsx(120,19): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/globals/ServerMypagination.tsx(135,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/globals/ServerMypagination.tsx(146,13): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+  Overload 2 of 2, '(props: LinkProps<`/${string}?page=${number}`>): JSX.Element', gave the following error.
+    Type '`/${string}?page=${number}`' is not assignable to type 'UrlObject | RouteImpl<`/${string}?page=${number}`>'.
+components/nessasery/Dilog.tsx(32,11): error TS2554: Expected 6 arguments, but got 3.
+components/Orders/Sortdiologsection.tsx(19,11): error TS2339: Property 'sortopen' does not exist on type '{ sortopen: boolean; setsortopen: Dispatch<SetStateAction<boolean>>; filteropen: boolean; setfilteropen: Dispatch<SetStateAction<boolean>>; sortby: string; setsortby: Dispatch<...>; } | null'.
+components/Orders/Sortdiologsection.tsx(19,21): error TS2339: Property 'setsortopen' does not exist on type '{ sortopen: boolean; setsortopen: Dispatch<SetStateAction<boolean>>; filteropen: boolean; setfilteropen: Dispatch<SetStateAction<boolean>>; sortby: string; setsortby: Dispatch<...>; } | null'.
+components/Orders/Sortdiologsection.tsx(19,34): error TS2339: Property 'sortby' does not exist on type '{ sortopen: boolean; setsortopen: Dispatch<SetStateAction<boolean>>; filteropen: boolean; setfilteropen: Dispatch<SetStateAction<boolean>>; sortby: string; setsortby: Dispatch<...>; } | null'.
+components/Orders/Sortdiologsection.tsx(19,42): error TS2339: Property 'setsortby' does not exist on type '{ sortopen: boolean; setsortopen: Dispatch<SetStateAction<boolean>>; filteropen: boolean; setfilteropen: Dispatch<SetStateAction<boolean>>; sortby: string; setsortby: Dispatch<...>; } | null'.
+components/ui/Smartpagi.tsx(75,19): error TS2345: Argument of type '`${string}?${string}`' is not assignable to parameter of type 'RouteImpl<`${string}?${string}`>'.
+components/ui/Smartpagi.tsx(88,29): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/ui/Smartpagi.tsx(97,27): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/ui/Smartpagi.tsx(117,29): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/ui/Smartpagi.tsx(135,13): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/ui/Smartpagi.tsx(162,15): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/ui/Smartpagi.tsx(173,15): error TS2322: Type 'string' is not assignable to type '(UrlObject | RouteImpl<unknown>) & (string | undefined)'.
+components/users/Userinfowrap.tsx(123,26): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'string | null' is not assignable to parameter of type 'string | number | Date'.
+      Type 'null' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'string | null' is not assignable to parameter of type 'string | number'.
+      Type 'null' is not assignable to type 'string | number'.

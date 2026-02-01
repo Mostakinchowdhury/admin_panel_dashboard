@@ -1,13 +1,18 @@
 import { toast } from 'sonner';
-import { PaginatedOrderResponse } from '../type/orders';
 import api from '../utils/api';
 import { OrderProof } from '../type/orderprove';
+import { Dispatch, SetStateAction } from 'react';
 
 export async function fetchorderprove({
   setloading,
   setordersprov,
   status = 'All',
   search = '',
+}: {
+  setloading: Dispatch<SetStateAction<boolean>>;
+  setordersprov: Dispatch<SetStateAction<OrderProof[]>>;
+  status?: string;
+  search?: string;
 }) {
   setloading(true);
   search = search.trim();
