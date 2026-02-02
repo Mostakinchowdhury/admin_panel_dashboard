@@ -23,14 +23,17 @@ const Sidebar = ({
   return (
     <>
       <div
-        className={`fixed inset-0 z-10 backdrop-blur-md pointer-events-auto select-none ${
-          ishowmanu ? 'block' : 'hidden'
+        className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
+          ishowmanu ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
+        onClick={handlecrossclick}
       ></div>
       <aside
-        className={`${className ? className : ''} flex flex-col gap-2 lg:relative absolute top-0 ${
-          ishowmanu ? 'left-0' : 'left-[-1000px]'
-        } transition-all duration-300 lg:top-0 lg:left-0 py-8 px-6 bg-primary h-screen z-50`}
+        className={`${
+          className ? className : ''
+        } flex flex-col gap-2 lg:relative fixed lg:translate-x-0 top-0 left-0 ${
+          ishowmanu ? 'translate-x-0' : '-translate-x-full'
+        } transition-transform duration-300 py-8 px-10 bg-primary h-screen z-50 shadow-2xl lg:shadow-none`}
       >
         {/* xross button */}
         <Button

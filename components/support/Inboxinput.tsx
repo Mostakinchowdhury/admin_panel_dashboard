@@ -70,27 +70,26 @@ export default function Inboxinput({
     <div
       className={`${
         className ? className : ''
-      } flex items-center gap-1 border-[1px] border-gray-200 rounded-lg shadow-2xs`}
+      } flex items-center gap-1 border dark:border-border/50 rounded-lg shadow-sm bg-white dark:bg-card transition-colors`}
     >
       <Input
         placeholder="Write your message"
-        className="focus-visible:ring-0 border-0 txtstlp placeholder:txtstlp text-font1 placeholder:text-font1"
+        className="focus-visible:ring-0 border-0 txtstlp placeholder:txtstlp text-font1 placeholder:text-font1 bg-transparent"
         value={input}
         onChange={handlechange}
         onKeyDown={handlekeydown}
       />
       <Button
-        className="flex items-center gap-1 bg-green-100 hover:bg-gray-100 h-full"
+        className="flex items-center gap-1 bg-secondary hover:bg-secondary/80 text-primary dark:text-primary-foreground h-11 px-6 rounded-r-lg transition-all active:scale-95"
         onClick={handleSend}
         disabled={loading}
       >
-        {' '}
         {loading ? (
-          <Sloading size={25} />
+          <Sloading size={20} />
         ) : (
           <>
-            <p className="txtstlh4">Send</p>
-            <IoIosSend size={25} color="#000" />
+            <p className="font-bold text-sm">Send</p>
+            <IoIosSend size={20} />
           </>
         )}
       </Button>

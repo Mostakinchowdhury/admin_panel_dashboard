@@ -90,7 +90,7 @@ const Categorypage = () => {
               <span>Create new Supercategory</span>
             </Button>
           </Addsupercategorydiologwrap>
-          <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom  max-h-[650px] overflow-y-auto">
+          <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom max-h-[650px] overflow-y-auto transition-colors">
             <table className="border-none m-0 w-full">
               <thead className="p-2 rounded-t-xl bg-primary">
                 <tr className="">
@@ -137,7 +137,7 @@ const Categorypage = () => {
               <span>Create new Category</span>
             </Button>
           </Addcategorydiologwrap>
-          <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom my-4 lg:my-6 max-h-[650px] overflow-y-auto">
+          <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom my-4 lg:my-6 max-h-[650px] overflow-y-auto transition-colors">
             <table className="border-none m-0 w-full">
               <thead className="p-2 rounded-t-xl bg-primary">
                 <tr className="">
@@ -188,7 +188,7 @@ const Categorypage = () => {
               <span>Create new Promo Code</span>
             </Button>
           </Addpromodiologwrap>
-          <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom my-4 lg:my-6 max-h-[650px] overflow-y-auto">
+          <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom my-4 lg:my-6 max-h-[650px] overflow-y-auto transition-colors">
             <table className="border-none m-0 w-full">
               <thead className="p-2 rounded-t-xl bg-primary">
                 <tr className="">

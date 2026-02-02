@@ -14,16 +14,6 @@ import { Orderpageprovider } from './context/Orderpage';
 import { Partnerpageprovider } from '@/app/context/partner';
 import { Userpageprovider } from './context/Userpage';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,7 +35,7 @@ export default function RootLayout({
                   <Globalcontexprovider>
                     <section className="md:flex md:gap-0 block">
                       <Sidebar
-                        className="min-h-screen box-border min-w-[240px] lg:min-w-[280px]"
+                        className="min-h-screen box-border min-w-[280px]"
                         ishowmanu={ishowmanu}
                         setisshowmanu={setisshowmanu}
                       />

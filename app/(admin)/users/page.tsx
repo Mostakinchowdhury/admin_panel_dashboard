@@ -11,10 +11,10 @@ import Overviewboxusers from '@/components/users/Overviewboxusers';
 import Userrow from '@/components/users/Userrow';
 import Usersortdiologsection from '@/components/users/Usersortdiologsection';
 import { CreateDialogWrapper } from '@/app/hooks/useCreate';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { BiSort } from 'react-icons/bi';
 import { FaUser, FaUsers, FaUsersCog, FaUserSecret } from 'react-icons/fa';
-import useGlobal, { useSummery } from '@/app/context/Globalcontex';
+import { useSummery } from '@/app/context/Globalcontex';
 
 const Userspage = () => {
   const [tabs, settabs] = useState<string>('All');
@@ -31,10 +31,8 @@ const Userspage = () => {
   const { user_sortby } = useUsercontext() ?? { user_sortby: 'df' };
   const { summery, sloading } = useSummery();
   const props = { page, setpage, totalpages };
-  // Reset page when search or sort changes
-  useEffect(() => {
-    setpage(1);
-  }, [searchvalue, user_sortby]);
+  const prevSearch = useRef(searchvalue);
+  const prevSort = useRef(user_sortby);
 
   useEffect(() => {
     return () => {
@@ -45,21 +43,32 @@ const Userspage = () => {
 
   // ========================== fetch users ===================
   useEffect(() => {
+    const isSearchOrSortChanged =
+      prevSearch.current !== searchvalue || prevSort.current !== user_sortby;
+
+    if (isSearchOrSortChanged && page !== 1) {
+      setpage(1);
+      return;
+    }
+
     fetchuser({
       setloading,
       setusers,
       settotalpages,
-      page,
+      page: isSearchOrSortChanged ? 1 : page,
       setcount,
       search: searchvalue,
       status: tabs,
       sortby: user_sortby,
     });
+
+    prevSearch.current = searchvalue;
+    prevSort.current = user_sortby;
   }, [page, searchvalue, tabs, user_sortby]);
   return (
     <div className="p-3 md:p-6 space-y-5 overflow-y-auto grow scroll-custom">
       {/* top overview section */}
-      <section className="bg-white p-2.5">
+      <section className="bg-white dark:bg-card p-4 rounded-xl shadow-sm border dark:border-border/50 transition-colors">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-bold manrope text-font1">
             Users Over View
@@ -146,7 +155,7 @@ const Userspage = () => {
       {/* sort by and filter */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto shadow-sm">
           {Userrole.map((dt, ind) => (
             <Button
               key={ind}
@@ -165,7 +174,7 @@ const Userspage = () => {
           ))}
         </div>
         {/* filter and sort */}
-        <div className="flex items-center gap-2.5 bg-white p-3 rounded-lg ml-auto md:ml-0">
+        <div className="flex items-center gap-2.5 bg-white dark:bg-card border dark:border-border/50 p-3 rounded-lg ml-auto md:ml-0 shadow-sm">
           <Usersortdiologsection icon={BiSort} />
         </div>
       </section>
@@ -183,7 +192,7 @@ const Userspage = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom">
+        <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom transition-colors">
           <table className="border-none m-0 w-full">
             <thead className="p-2 rounded-t-xl bg-primary">
               <tr className="">

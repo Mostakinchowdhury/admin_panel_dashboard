@@ -23,20 +23,24 @@ const Overviewboxrider = ({
     >
       {/* icon */}
       <div
-        className={`flex justify-center items-center rounded-xl size-14 text-black ${
-          classNameib ? classNameib : 'bg-secondary'
+        className={`flex justify-center items-center rounded-xl size-14 text-primary dark:text-primary-foreground ${
+          classNameib ? classNameib : 'bg-secondary dark:bg-muted'
         }`}
       >
-        {typeof Icon === 'function' ? (
-          <Icon className={`size-7 ${classNamei ? classNamei : ''}`} />
-        ) : (
-          Icon
-        )}
+        {Icon ? (
+          typeof Icon === 'function' ? (
+            <Icon className={`size-7 ${classNamei ? classNamei : ''}`} />
+          ) : (
+            Icon
+          )
+        ) : null}
       </div>
       {/* text */}
       <div className="flex flex-col justify-between gap-1">
-        <h3 className="text-font1 text-xl font-bold">{amout}</h3>
-        <p className="text-gray-600 font-medium text-sm">{p}</p>
+        <h3 className="text-font1 text-xl font-bold transition-colors">
+          {amout}
+        </h3>
+        <p className="text-font2 font-medium text-sm transition-colors">{p}</p>
       </div>
     </div>
   );

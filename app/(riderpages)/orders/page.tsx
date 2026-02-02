@@ -2,9 +2,8 @@
 import { fetchorders } from '@/app/api/orders';
 import useglobal from '@/app/context/Globalcontex';
 import useHeader from '@/app/context/Headercontext';
-import useOrdercontext, { Orderpageprovider } from '@/app/context/Orderpage';
+import useOrdercontext from '@/app/context/Orderpage';
 import { Orders } from '@/app/type/orders';
-import { orders } from '@/assets/datas/data';
 import Mypagination from '@/components/globals/Mypagination';
 import Blurload from '@/components/nessasery/Loading';
 import { Spinner } from '@/components/nessasery/Spinner';
@@ -13,7 +12,7 @@ import Overviewboxorders from '@/components/Orders/Overviewboxorders';
 import Sortdiologsection from '@/components/Orders/Sortdiologsection';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { BiSort } from 'react-icons/bi';
 import { MdDeliveryDining, MdPending } from 'react-icons/md';
 import { TbBasketCancel, TbTruckDelivery } from 'react-icons/tb';
@@ -32,17 +31,8 @@ const Orderspage = () => {
   const { role } = useglobal();
   const router = useRouter();
 
-  // Reset page when search or sort changes
-  useEffect(() => {
-    setpage(1);
-  }, [searchvalue, sortby]);
-
-  // ============= if user is rider redirect to another page============
-  useEffect(() => {
-    if (role === 'partner') {
-      router.push('/products');
-    }
-  }, [role, router]);
+  const prevSearch = useRef(searchvalue);
+  const prevSort = useRef(sortby);
 
   useEffect(() => {
     return () => {
@@ -53,15 +43,26 @@ const Orderspage = () => {
 
   // ==================fetch order's=================
   useEffect(() => {
+    const isSearchOrSortChanged =
+      prevSearch.current !== searchvalue || prevSort.current !== sortby;
+
+    if (isSearchOrSortChanged && page !== 1) {
+      setpage(1);
+      return;
+    }
+
     fetchorders({
       setloading,
       setorders,
       settotalpages,
-      page,
+      page: isSearchOrSortChanged ? 1 : page,
       search: searchvalue,
       status: tabs,
       sortby,
     });
+
+    prevSearch.current = searchvalue;
+    prevSort.current = sortby;
   }, [page, searchvalue, tabs, sortby]);
 
   if (role == 'partner') {
@@ -70,7 +71,7 @@ const Orderspage = () => {
   return (
     <div className="p-3 md:p-6 space-y-5 overflow-y-auto grow scroll-custom">
       {/* top boxes section */}
-      <section className="bg-white p-2.5">
+      <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm transition-colors">
         <h3 className="text-2xl font-bold manrope text-font1">
           Orders Over View
         </h3>
@@ -110,7 +111,7 @@ const Orderspage = () => {
       {/* tab and sort and filter section */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto shadow-sm">
           {[
             'All',
             ...Array.from(
@@ -140,7 +141,7 @@ const Orderspage = () => {
           ))}
         </div>
         {/* filter and sort */}
-        <div className="flex items-center gap-2.5 bg-white p-1 rounded-lg ml-auto md:ml-0">
+        <div className="flex items-center gap-2.5 bg-white dark:bg-card border dark:border-border/50 p-1 rounded-lg ml-auto md:ml-0 shadow-sm">
           <Sortdiologsection icon={BiSort} />
         </div>
       </section>
@@ -148,7 +149,7 @@ const Orderspage = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom">
+        <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom transition-colors">
           <table className="border-none m-0 w-full">
             <thead className="p-2 rounded-t-xl bg-primary">
               <tr className="">

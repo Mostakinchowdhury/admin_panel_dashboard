@@ -60,10 +60,20 @@ export const Globalcontexprovider = ({
   const [address, setaddress] = useState<Address[] | null>(null);
 
   // user details
-  const userdetails = { user, uprofile, address } as {
+  const userdetails = {
+    user,
+    uprofile,
+    address,
+    setuser,
+    setaddress,
+    setuprofile,
+  } as {
     user: User | null;
     uprofile: UserProfile | null;
     address: Address[] | null;
+    setuser: Dispatch<SetStateAction<User | null>>;
+    setuprofile: Dispatch<SetStateAction<UserProfile | null>>;
+    setaddress: Dispatch<SetStateAction<Address[] | null>>;
   };
 
   // =================  summery =========================
@@ -148,6 +158,14 @@ export const Globalcontexprovider = ({
       setauth_loading(false);
     }
   };
+
+  // Reactive user data fetch when authenticated
+  useEffect(() => {
+    if (is_authenticated && !user) {
+      fetchUsers(setauth_loading, setuser, setuprofile, setaddress);
+    }
+  }, [is_authenticated, user]);
+
   // ========================= end of auth related=======================
 
   // ============================ profiles states ===========================
@@ -262,8 +280,12 @@ export function useUserDetail(): {
   user: User | null;
   uprofile: UserProfile | null;
   address: Address[] | null;
+  setuser: Dispatch<SetStateAction<User | null>>;
+  setuprofile: Dispatch<SetStateAction<UserProfile | null>>;
+  setaddress: Dispatch<SetStateAction<Address[] | null>>;
 } {
   const { userdetails } = useContext(globalcontex);
-  const { user, uprofile, address } = userdetails;
-  return { user, uprofile, address };
+  const { user, uprofile, address, setuser, setaddress, setuprofile } =
+    userdetails;
+  return { user, uprofile, address, setuser, setaddress, setuprofile };
 }

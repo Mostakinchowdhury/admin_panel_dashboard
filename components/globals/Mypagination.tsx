@@ -25,123 +25,133 @@ export default function Mypagination({
     return <></>;
   }
   return (
-    <section className="flex items-center gap-2.5 md:gap-3 justify-center  flex-wrap mx-auto">
+    <section className="flex items-center gap-2 md:gap-3 justify-center flex-wrap mx-auto py-4">
       {/* previous link */}
       {page > 1 && (
         <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-green-500 bg-amber-400
-        }`}
+          className="manrope text-sm font-bold bg-muted hover:bg-muted/80 text-foreground border border-border/50 rounded-xl px-4 transition-all active:scale-95"
           onClick={() => setpage(pre => Math.max(1, pre - 1))}
         >
-          <MdSkipPrevious />
-          Previous
+          <MdSkipPrevious className="w-4 h-4" />
+          <span>Previous</span>
         </Button>
       )}
-      {/* 1 or 1 to 2 */}
 
-      {totalpages > 1 &&
-        (totalpages > 2 ? (
-          Array(2)
-            .fill(0)
-            .map((_, i) => (
-              <Button
-                key={i + 1}
-                className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-blue-600 ${
-                  page == i + 1 ? 'bg-green-600' : 'bg-primary'
-                }`}
-                onClick={() => setpage(i + 1)}
-              >
-                {i + 1}
-              </Button>
-            ))
-        ) : (
+      <div className="flex items-center gap-2">
+        {totalpages > 1 &&
+          (totalpages > 2 ? (
+            Array(2)
+              .fill(0)
+              .map((_, i) => (
+                <Button
+                  key={i + 1}
+                  className={`manrope size-10 font-bold rounded-xl transition-all active:scale-95 ${
+                    page == i + 1
+                      ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                      : 'bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary'
+                  }`}
+                  onClick={() => setpage(i + 1)}
+                >
+                  {i + 1}
+                </Button>
+              ))
+          ) : (
+            <Button
+              className={`manrope size-10 font-bold rounded-xl transition-all active:scale-95 ${
+                page == 1
+                  ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                  : 'bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary'
+              }`}
+              onClick={() => setpage(1)}
+            >
+              1
+            </Button>
+          ))}
+
+        {page >= 2 && page <= 3 && totalpages > 4 && (
           <Button
-            className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-blue-600 ${
-              page == 1 ? 'bg-green-600' : 'bg-primary'
-            }
-        }`}
-            onClick={() => setpage(1)}
+            className="manrope size-10 font-bold rounded-xl bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary transition-all active:scale-95"
+            onClick={() => setpage(3)}
           >
-            1
+            3
           </Button>
-        ))}
-      {/* 3 by condition */}
-      {page >= 2 && page <= 3 && totalpages > 4 && (
-        <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-blue-600 bg-primary`}
-          onClick={() => setpage(3)}
-        >
-          3
-        </Button>
-      )}
-      {/* 4 by condition */}
-      {page == 3 && totalpages > 5 && (
-        <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-blue-600 bg-primary`}
-          onClick={() => setpage(4)}
-        >
-          4
-        </Button>
-      )}
-      {ldot && (
-        <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-black bg-orange-800`}
-        >
-          <BsThreeDots />
-        </Button>
-      )}
-      {ldot &&
-        rdot &&
-        [page, page + 1, page + 2].map(i => (
+        )}
+
+        {page == 3 && totalpages > 5 && (
           <Button
-            key={i}
-            className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 ${
-              i == page ? 'bg-green-500' : 'bg-primary'
+            className="manrope size-10 font-bold rounded-xl bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary transition-all active:scale-95"
+            onClick={() => setpage(4)}
+          >
+            4
+          </Button>
+        )}
+
+        {ldot && (
+          <div className="flex items-center justify-center size-10 text-font2">
+            <BsThreeDots />
+          </div>
+        )}
+
+        {ldot &&
+          rdot &&
+          [page, page + 1, page + 2].map(i => (
+            <Button
+              key={i}
+              className={`manrope size-10 font-bold rounded-xl transition-all active:scale-95 ${
+                i == page
+                  ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                  : 'bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary'
+              }`}
+              onClick={() => setpage(i)}
+            >
+              {i}
+            </Button>
+          ))}
+
+        {ldot &&
+          !rdot &&
+          totalpages > 4 &&
+          [totalpages - 2, totalpages - 1].map(i => (
+            <Button
+              key={i}
+              className={`manrope size-10 font-bold rounded-xl transition-all active:scale-95 ${
+                i == page
+                  ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                  : 'bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary'
+              }`}
+              onClick={() => setpage(i)}
+            >
+              {i}
+            </Button>
+          ))}
+
+        {rdot && (
+          <div className="flex items-center justify-center size-10 text-font2">
+            <BsThreeDots />
+          </div>
+        )}
+
+        {totalpages > 0 && (
+          <Button
+            className={`manrope size-10 font-bold rounded-xl transition-all active:scale-95 ${
+              page == totalpages
+                ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                : 'bg-white dark:bg-card text-font1 border dark:border-border/50 hover:bg-secondary'
             }`}
-            onClick={() => setpage(i)}
+            onClick={() => setpage(totalpages)}
           >
-            {i}
+            {totalpages}
           </Button>
-        ))}
-      {ldot &&
-        !rdot &&
-        totalpages > 4 &&
-        [totalpages - 2, totalpages - 1].map(i => (
-          <Button
-            key={i}
-            className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 ${
-              i == page ? 'bg-green-500' : 'bg-primary'
-            }`}
-            onClick={() => setpage(i)}
-          >
-            {i}
-          </Button>
-        ))}
-      {rdot && (
-        <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-black bg-orange-800`}
-        >
-          <BsThreeDots />
-        </Button>
-      )}
-      {totalpages > 0 && (
-        <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-blue-600 bg-primary ${
-            page == totalpages ? 'bg-green-500' : 'bg-primary'
-          }
-        }`}
-          onClick={() => setpage(totalpages)}
-        >
-          {totalpages}
-        </Button>
-      )}
+        )}
+      </div>
+
       {page != totalpages && (
         <Button
-          className={`manrope txtstlh3 font-extrabold text-white focus-visible:ring-0 focus:ring-0 hover:bg-green-500 bg-amber-400
-        }`}
+          className="manrope text-sm font-bold bg-primary hover:bg-primary/90 text-white rounded-xl px-4 transition-all active:scale-95 shadow-lg shadow-primary/20"
           onClick={() => setpage(pre => Math.min(totalpages, pre + 1))}
         >
-          Next <MdSkipNext />
+          <span>Next</span>
+          <MdSkipNext className="w-4 h-4" />
         </Button>
       )}
     </section>

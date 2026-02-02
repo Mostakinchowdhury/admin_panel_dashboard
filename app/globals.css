@@ -136,6 +136,12 @@
   --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --color-font1: oklch(0.985 0.002 247.839);
+  --color-font2: oklch(0.707 0.022 261.325);
+  --color-graybg: oklch(0.21 0.034 264.665);
+  --color-mainbg: oklch(0.13 0.028 261.692);
+  --color-strk: oklch(1 0 0 / 10%);
+  --color-strk2: oklch(1 0 0 / 5%);
 }
 
 @font-face {
@@ -228,6 +234,14 @@
 .scroll-custom::-webkit-scrollbar-thumb {
   background: #9fbdce;
   border-radius: 10px;
+}
+
+.dark .scroll-custom::-webkit-scrollbar-track {
+  background: oklch(0.21 0.034 264.665);
+}
+
+.dark .scroll-custom::-webkit-scrollbar-thumb {
+  background: oklch(0.488 0.243 264.376);
 }
 
 .scroll-custom::-webkit-scrollbar-thumb:hover {

@@ -11,7 +11,7 @@ import Rider_Sortdiologsection from '@/components/rider/Rider_sort_section';
 import Riderrow from '@/components/rider/Riderrow';
 import { Button } from '@/components/ui/button';
 import { CreateDialogWrapper } from '@/app/hooks/useCreate';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { BiSort } from 'react-icons/bi';
 import { RiEBike2Fill, RiEBikeFill, RiMotorbikeFill } from 'react-icons/ri';
 import { TbBikeOff } from 'react-icons/tb';
@@ -31,25 +31,8 @@ const Rider_page = () => {
     setsearchvalue,
   } = useHeader() ?? {};
   const props = { page, setpage, totalpages };
-
-  // ==================fetch rider's=================
-
-  useEffect(() => {
-    fetchrider({
-      setloading,
-      setriders,
-      settotalpages,
-      page,
-      search: searchvalue,
-      status: tabs,
-      sortby: rider_sortby,
-    });
-  }, [page, searchvalue, tabs, rider_sortby]);
-
-  // Reset page when search or sort changes
-  useEffect(() => {
-    setpage(1);
-  }, [searchvalue, rider_sortby]);
+  const prevSearch = useRef(searchvalue);
+  const prevSort = useRef(rider_sortby);
 
   useEffect(() => {
     return () => {
@@ -57,10 +40,35 @@ const Rider_page = () => {
       setexinput?.('');
     };
   }, [setsearchvalue, setexinput]);
+
+  // ==================fetch rider's=================
+
+  useEffect(() => {
+    const isSearchOrSortChanged =
+      prevSearch.current !== searchvalue || prevSort.current !== rider_sortby;
+
+    if (isSearchOrSortChanged && page !== 1) {
+      setpage(1);
+      return;
+    }
+
+    fetchrider({
+      setloading,
+      setriders,
+      settotalpages,
+      page: isSearchOrSortChanged ? 1 : page,
+      search: searchvalue,
+      status: tabs,
+      sortby: rider_sortby,
+    });
+
+    prevSearch.current = searchvalue;
+    prevSort.current = rider_sortby;
+  }, [page, searchvalue, tabs, rider_sortby]);
   return (
     <div className="p-3 md:p-6 space-y-5 overflow-y-auto grow scroll-custom">
       {/* top section overview */}
-      <section className="bg-white p-2.5">
+      <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm transition-colors">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-bold manrope text-font1">
             Riders Overview
@@ -167,7 +175,7 @@ const Rider_page = () => {
       {/* sort and filtering */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2 shadow-sm">
           {riderstatusoptions.map((dt, ind) => (
             <Button
               key={ind}
@@ -187,7 +195,7 @@ const Rider_page = () => {
         </div>
 
         {/* filter and sort */}
-        <div className="flex items-center gap-2.5 bg-white p-1 rounded-lg ml-auto md:ml-0">
+        <div className="flex items-center gap-2.5 bg-white dark:bg-card border dark:border-border/50 p-1 rounded-lg ml-auto md:ml-0 shadow-sm">
           <Rider_Sortdiologsection icon={BiSort} />
         </div>
       </section>
@@ -195,7 +203,7 @@ const Rider_page = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom">
+        <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom transition-colors">
           <table className="border-none m-0 w-full">
             <thead className="p-2 rounded-t-xl bg-primary">
               <tr>

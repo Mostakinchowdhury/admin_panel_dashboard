@@ -16,7 +16,7 @@ import Productrow from '@/components/product/Productrow';
 import Product_Sortdiologsection from '@/components/product/Productsortdiologsection';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { AiFillProduct } from 'react-icons/ai';
 import { BiSort } from 'react-icons/bi';
 import { CgUnavailable } from 'react-icons/cg';
@@ -38,6 +38,8 @@ export default function Productspage() {
   const router = useRouter();
   const { product_sortby } = useProductcontext();
   const { summery, sloading } = useSummery();
+  const prevSearch = useRef(searchvalue);
+  const prevSort = useRef(product_sortby);
 
   const productCreateFields: FieldConfig<{
     name: string;
@@ -96,23 +98,29 @@ export default function Productspage() {
     }
   }, [role, router]);
 
-  // Reset page when search or sort changes
-  useEffect(() => {
-    setpage(1);
-  }, [searchvalue, product_sortby]);
-
   // ==================fetch products=================
 
   useEffect(() => {
+    const isSearchOrSortChanged =
+      prevSearch.current !== searchvalue || prevSort.current !== product_sortby;
+
+    if (isSearchOrSortChanged && page !== 1) {
+      setpage(1);
+      return;
+    }
+
     fetchproduct({
       setloading,
       setproduct,
       settotalpages,
-      page,
+      page: isSearchOrSortChanged ? 1 : page,
       search: searchvalue,
       category: tabs,
       sortby: product_sortby,
     });
+
+    prevSearch.current = searchvalue;
+    prevSort.current = product_sortby;
   }, [page, searchvalue, tabs, product_sortby]);
 
   // ==============fetch category=====================
@@ -142,7 +150,7 @@ export default function Productspage() {
   return (
     <div className="p-3 md:p-6 space-y-5 overflow-y-auto grow scroll-custom">
       {/* top section overview */}
-      <section className="bg-white p-2.5">
+      <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm transition-colors">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-bold manrope text-font1">
             Products Over View
@@ -215,7 +223,7 @@ export default function Productspage() {
       {/* sort and filter section */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2 shadow-sm">
           {category.map((dt, ind) => (
             <Button
               key={ind}
@@ -234,7 +242,7 @@ export default function Productspage() {
           ))}
         </div>
         {/* filter and sort */}
-        <div className="flex items-center gap-2.5 bg-white p-1 rounded-lg ml-auto md:ml-0">
+        <div className="flex items-center gap-2.5 bg-white dark:bg-card border dark:border-border/50 p-1 rounded-lg ml-auto md:ml-0 shadow-sm">
           <Product_Sortdiologsection icon={BiSort} />
         </div>
       </section>
@@ -244,7 +252,7 @@ export default function Productspage() {
           Loading Products...
         </h2>
       ) : (
-        <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom">
+        <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom transition-colors">
           <table className="border-none m-0 w-full">
             <thead className="p-2 rounded-t-xl bg-primary">
               <tr>

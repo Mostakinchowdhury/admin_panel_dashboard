@@ -1,86 +1,94 @@
-import { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction } from 'react'
-import { IoIosSearch, IoIosSunny } from 'react-icons/io'
-import { IoMoonSharp, IoNotificationsOutline } from 'react-icons/io5'
-import { MdOutlineNotificationsActive } from 'react-icons/md'
-import { TiThMenu } from 'react-icons/ti'
-import { Button } from '../ui/button'
-import { Input } from '../ui/input'
-import useHeader from '@/app/context/Headercontext'
+import { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction } from 'react';
+import { IoIosSearch, IoIosSunny } from 'react-icons/io';
+import { IoMoonSharp, IoNotificationsOutline } from 'react-icons/io5';
+import { MdOutlineNotificationsActive } from 'react-icons/md';
+import { TiThMenu } from 'react-icons/ti';
+import { useUserDetail } from '@/app/context/Globalcontex';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import useHeader from '@/app/context/Headercontext';
 
 const Header = ({
   className,
   setisshowmanu,
   setisdark,
-  isdark
+  isdark,
 }: {
-  className?: string
-  setisshowmanu: Dispatch<SetStateAction<boolean>>
-  setisdark: Dispatch<SetStateAction<boolean>>
-  isdark: boolean
+  className?: string;
+  setisshowmanu: Dispatch<SetStateAction<boolean>>;
+  setisdark: Dispatch<SetStateAction<boolean>>;
+  isdark: boolean;
 }) => {
   // input state
-  const { searchvalue: input, setsearchvalue: setinput, handleinputbtnclick } = useHeader()
+  const {
+    searchvalue: input,
+    setsearchvalue: setinput,
+    handleinputbtnclick,
+  } = useHeader();
+  const { user } = useUserDetail();
   const handleclick = () => {
-    setisshowmanu((pre) => !pre)
-  }
+    setisshowmanu(pre => !pre);
+  };
   const handleinput = (e: ChangeEvent<HTMLInputElement>) => {
-    setinput(e.target.value)
-  }
+    setinput(e.target.value);
+  };
   const handlesearchclick = () => {
-    handleinputbtnclick()
-  }
+    handleinputbtnclick();
+  };
   const handlekeydown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key == 'Enter') {
-      handlesearchclick()
+      handlesearchclick();
     }
-  }
+  };
   return (
     <div
       className={`${
         className ? className : ''
-      } flex items-center gap-2 p-2.5 md:p-3 justify-between bg-white w-full`}
+      } flex items-center gap-2 p-2.5 md:p-3 justify-between bg-white dark:bg-card border-b dark:border-border/50 w-full transition-colors duration-300`}
     >
       {/* text */}
-      <h2 className="manrope text-2xl font-bold hidden md:block">Wellcome Mostakin</h2>
+      <h2 className="manrope text-2xl font-bold hidden md:block dark:text-foreground">
+        Welcome {user?.first_name || 'Admin'}
+      </h2>
       <Button
-        className="md:hidden block text-gray-300 border-[1px] border-gray-400 h-auto w-auto"
+        className="md:hidden block text-primary border border-primary/20 h-10 w-10 p-0"
         variant={'ghost'}
         onClick={handleclick}
       >
-        <TiThMenu size={80} />
+        <TiThMenu size={24} />
       </Button>
       {/* search or a to z functionality section */}
       <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3">
         {/* search div*/}
-        <div className="flex justify-between items-center border-2 border-gray-600 w-[160px] sm:w-[180px] md:w-[310px] rounded-2xl h-10 md:h-12 overflow-hidden">
+        <div className="flex justify-between items-center border-2 border-primary/20 dark:border-border/50 w-[140px] sm:w-[180px] md:w-[310px] rounded-full h-10 md:h-11 overflow-hidden bg-gray-50 dark:bg-muted/50 focus-within:border-primary/50 transition-all">
           <Input
-            className="ghost text-sm text-font1 font-medium placeholder:text-sm placeholder:text-font1 grow px-2.5 py-1.5 border-0 outline-0 focus:outline-0 focus-visible:ring-0 focus-visible:outline-0 focus-visible:border-0 focus:border-0 active:border-0 active:outline-0 active:ring-0 focus:ring-0 bg-transparent hover:bg-transparent"
-            placeholder=" Search..."
+            className="ghost text-sm text-font1 dark:text-foreground font-medium placeholder:text-sm placeholder:text-font2 grow px-4 py-1.5"
+            placeholder="Search..."
             value={input}
             onChange={handleinput}
             onKeyDown={handlekeydown}
           />
           {/* button */}
-          <Button
-            className="w-10 h-full flex justify-between items-center text-black font-bold bg-gray-300 rounded-none hover:text-white"
+          <button
+            className="w-10 h-full flex justify-center items-center text-primary-foreground bg-primary hover:bg-primary/90 transition-colors"
             onClick={handlesearchclick}
           >
-            <IoIosSearch />
-          </Button>
+            <IoIosSearch size={20} />
+          </button>
         </div>
-        {/* togle dark or light */}
-        <div className="flex gap-0 items-center justify-center bg-ts w-20 sm:w-[100px] h-[30px] md:w-[140px]  rounded-xl overflow-hidden dark:bg-ts">
+        {/* toggle dark or light */}
+        <div className="flex p-1 items-center bg-secondary dark:bg-muted rounded-full w-24 sm:w-28 md:w-32 h-10 md:h-11 shadow-inner">
           <button
-            className={`flex-1 h-full flex justify-center items-center font-bold  dark:rounded-none hover:rounded-r-xl bg-primary text-gray-300 rounded-r-xl hover:text-red-800 dark:hover:bg-transparent dark:bg-ts`}
+            className={`flex-1 h-full flex justify-center items-center rounded-full transition-all duration-300 ${!isdark ? 'bg-white text-primary shadow-sm scale-105' : 'text-primary/60 hover:text-primary'}`}
             onClick={() => setisdark(false)}
           >
-            <IoIosSunny />
+            <IoIosSunny size={20} />
           </button>
           <button
-            className={`flex-1 h-full flex justify-center items-center font-bold  rounded-none hover:rounded-l-xl hover:text-gray-300 text-primary  dark:text-gray-300 dark:rounded-l-xl  dark:hover:text-red-600 dark:hover:bg-tp bg-secondary dark:bg-tp`}
+            className={`flex-1 h-full flex justify-center items-center rounded-full transition-all duration-300 ${isdark ? 'bg-primary text-white shadow-sm scale-105' : 'text-font2 hover:text-foreground'}`}
             onClick={() => setisdark(true)}
           >
-            <IoMoonSharp />
+            <IoMoonSharp size={18} />
           </button>
         </div>
         {/* notification */}
@@ -96,7 +104,7 @@ const Header = ({
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

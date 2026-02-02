@@ -91,7 +91,7 @@ const Orderprovepage = () => {
       {/* tab and sort and filter section */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto shadow-sm">
           {[
             'All',
             ...Array.from(new Set(['PENDING', 'APPROVED', 'CANCELLED'])),
@@ -117,7 +117,7 @@ const Orderprovepage = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <section className="bg-white p-4 max-w-full w-full overflow-x-auto block scroll-custom">
+        <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm max-w-full w-full overflow-x-auto block scroll-custom transition-colors">
           <table className="border-none m-0 w-full">
             <thead className="p-2 rounded-t-xl bg-primary">
               <tr className="">

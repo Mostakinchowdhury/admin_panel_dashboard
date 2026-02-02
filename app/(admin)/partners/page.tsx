@@ -11,7 +11,7 @@ import Partnerrow from '@/components/partner/Partnerrow';
 import Partner_Sortdiologsection from '@/components/partner/Partnershortdiologsection';
 import { Button } from '@/components/ui/button';
 import { CreateDialogWrapper } from '@/app/hooks/useCreate';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { BiSort } from 'react-icons/bi';
 import { BsStopwatchFill } from 'react-icons/bs';
 import { FaHandshake } from 'react-icons/fa';
@@ -22,38 +22,48 @@ const Partner_page = () => {
   const [tabs, settabs] = useState<string>('All');
   const [page, setpage] = useState<number>(1);
   const [totalpages, settotalpages] = useState<number>(1);
-  const { exinput: searchvalue } = useHeader() ?? {};
+  const {
+    exinput: searchvalue,
+    setexinput,
+    setsearchvalue,
+  } = useHeader() ?? {};
   const [loading, setloading] = useState<boolean>(false);
   const [partners, setpartners] = useState<Shop[]>([]);
   const { partner_sortby } = usePartnercontext() ?? { partner_sortby: 'df' };
 
   const props = { page, setpage, totalpages };
+  const prevSearch = useRef(searchvalue);
+  const prevSort = useRef(partner_sortby);
 
-  const { setexinput, setsearchvalue } = useHeader() ?? {};
   useEffect(() => {
-    setexinput?.('');
-    setsearchvalue?.('');
     return () => {
       setexinput?.('');
       setsearchvalue?.('');
     };
   }, [setexinput, setsearchvalue]);
 
-  useEffect(() => {
-    setpage(1);
-  }, [searchvalue, partner_sortby]);
-
   //  ============================ fetch partners====================
   useEffect(() => {
+    const isSearchOrSortChanged =
+      prevSearch.current !== searchvalue || prevSort.current !== partner_sortby;
+
+    if (isSearchOrSortChanged && page !== 1) {
+      setpage(1);
+      return;
+    }
+
     fetchpartners({
       setloading,
       setpartners,
       settotalpages,
-      page,
+      page: isSearchOrSortChanged ? 1 : page,
       search: searchvalue,
       status: tabs,
       sortby: partner_sortby,
     });
+
+    prevSearch.current = searchvalue;
+    prevSort.current = partner_sortby;
   }, [page, searchvalue, tabs, partner_sortby]);
 
   // ============== reset search ===============
@@ -61,7 +71,7 @@ const Partner_page = () => {
   return (
     <div className="p-3 md:p-6 space-y-5 overflow-y-auto grow scroll-custom">
       {/* top section overview */}
-      <section className="bg-white p-2.5">
+      <section className="bg-white dark:bg-card border dark:border-border/50 p-4 rounded-xl shadow-sm transition-colors">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-bold manrope text-font1">
             Partners Overview
@@ -196,7 +206,7 @@ const Partner_page = () => {
       {/* sort and filtering */}
       <section className="flex md:justify-between md:items-center flex-col md:flex-row gap-2">
         {/* tabs */}
-        <div className="flex items-center gap-2 rounded-lg bg-white p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2">
+        <div className="flex items-center gap-2 rounded-lg bg-white dark:bg-card border dark:border-border/50 p-1 w-full overflow-x-auto scroll-hide md:w-auto md:max-w-1/2 shadow-sm">
           {partnerstatus.map((dt, ind) => (
             <Button
               key={ind}
@@ -215,7 +225,7 @@ const Partner_page = () => {
           ))}
         </div>
         {/* filter and sort */}
-        <div className="flex items-center gap-2.5 bg-white p-3 rounded-lg ml-auto md:ml-0">
+        <div className="flex items-center gap-2.5 bg-white dark:bg-card border dark:border-border/50 p-1 rounded-lg ml-auto md:ml-0 shadow-sm">
           <Partner_Sortdiologsection icon={BiSort} />
         </div>
       </section>
